@@ -2934,7 +2934,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   function ShowComingSoon() {
     const comingSoonText = add([
       text("New Levels Soon! :)"),
-      scale(0.45),
+      scale(0.55),
       origin("center"),
       pos(width() / 2, height() / 2 + 90)
     ]);
