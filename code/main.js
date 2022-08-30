@@ -11,11 +11,21 @@ loadSound("bell", "sounds/bell.mp3");
 
 // Configs
 const DEATH_TEXT = "You got all of them!";
-
 let levelNumber = 1;
+// Show the Source
+function AddSource() {
+  const sourceText = add([
+    text("THIS GAME IS OPEN SOURCE: https://github.com/Hanselkek/Snoop-Snout"),
+    scale(0.325),
+    origin("center"),
+    pos(500, 40),
+  ])
+}
 // LEVEL 1
 scene("game1", () => {
   let currentCoins = 6;
+
+  AddSource();
 
   // Adding the player sprite
   const player = add([

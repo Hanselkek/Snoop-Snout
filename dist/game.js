@@ -2921,8 +2921,18 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   loadSound("bell", "sounds/bell.mp3");
   var DEATH_TEXT = "You got all of them!";
   var levelNumber = 1;
+  function AddSource() {
+    const sourceText = add([
+      text("THIS GAME IS OPEN SOURCE: https://github.com/Hanselkek/Snoop-Snout"),
+      scale(0.325),
+      origin("center"),
+      pos(500, 40)
+    ]);
+  }
+  __name(AddSource, "AddSource");
   scene("game1", () => {
     let currentCoins = 6;
+    AddSource();
     const player = add([
       sprite("bean"),
       pos(25, 35),
