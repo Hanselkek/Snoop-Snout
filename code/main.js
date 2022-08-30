@@ -26,7 +26,7 @@ function AddSource() {
 function ShowComingSoon(){
   const comingSoonText = add([
     text("New Levels Soon! :)"),
-    scale(0.55),
+    scale(0.65),
     origin("center"),
     pos(width() / 2, height() / 2 + 90),
   ])
